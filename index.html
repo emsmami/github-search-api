@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Search GitHub Repos</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Search GitHub Repos by user">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header role="banner">
+     
+    </header>
+  
+    <main class="content" role="main">
+  
+      <form id="single-form">
+            <h3 id="form-label"> Review the repositories for a specific user</h3>
+        <section class="chooser">
+        
+            <label for="userInput">Enter username here</label>
+          <input type="string" id="userInput" label="Input user name?">
+  
+  
+          <button type="submit" id=“get-repos”>Get Repos</button>
+        </section>
+  
+      </form>
+      <section class="results hidden">
+            <h3>Look at these repos!</h3>
+           <section class ="results-items">
+
+           </section>
+    </section>  
+    <section class="error-message" id="js-error-message"></section>
+    </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
